@@ -9,10 +9,10 @@ Action()
 		LAST);
 	
 	n = lr_db_executeSQLStatement("StepName=PerformQuery", 
-	  	"ConnectionName=MyConnection", 
-	    "SQLStatement=select * "
-	    "from loadtable2",
-	    "DatasetName=MyDataset", 
+		"ConnectionName=MyConnection", 
+		"SQLStatement=select * "
+		"from loadtable2",
+		"DatasetName=MyDataset", 
 		LAST );
 	
 	lr_save_int(n, "NumOfRows");
